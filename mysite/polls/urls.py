@@ -9,3 +9,7 @@ urlpatterns = [
 	path('<int:pk>/results/', views.ResultsView.as_view(), name='results'),
 	path('<int:question_id>/vote/', views.vote, name='vote'),
 ]
+
+
+# from django.views.generic import TemplateView
+# TemplateView.as_view(extra_context={'title': 'Custom Title'})
